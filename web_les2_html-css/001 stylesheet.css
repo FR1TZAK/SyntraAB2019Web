@@ -1,0 +1,38 @@
+:root {
+    --primary-color: #036ba7;
+    /*
+    Using CSS custom properties / variables
+    ----------------------------------------
+    Note that the selector given to the ruleset defines the scope 
+    that the custom property can be used in. A common best practice 
+    is to define custom properties on the :root pseudo-class, so 
+    that it can be applied globally across your HTML document.
+    */
+}
+
+body {
+    background-color: #cde1f8;
+    color: #3f3f3f;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+
+}
+
+div#block1 h1 {
+    color: orange;
+}
+
+
+div#block1 p {
+    width: 600px;
+}
+
+div#block2 h1 {
+    color: blue;
+}
+
+
+div#block2 p {
+    color: var(--primary-color);
+    width: 400px;
+}
